@@ -21,6 +21,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
   padding: 20px;
 }
 .card__img {
@@ -73,6 +74,10 @@
   flex-basis: 15%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
+}
+.result-block__title, .result-block__total-price {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
