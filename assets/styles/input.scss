@@ -70,7 +70,8 @@
       background calc(var(--dur) * 4) steps(4, jump-end);
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:disabled {
       box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, 0.2);
       transform: translateY(-4px);
       color: hsl(210, 1%, 48%);
@@ -80,6 +81,9 @@
       border-top-right-radius: var(--radius);
       border-bottom-left-radius: var(--radius);
       border-bottom-right-radius: var(--radius);
+    }
+    &:disabled {
+      cursor: none;
     }
   }
   &__result {

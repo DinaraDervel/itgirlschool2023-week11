@@ -61,7 +61,7 @@
   --radius: 16px;
   transition: border-top-left-radius var(--dur) var(--delay) ease-out, border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out, border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out, border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out, box-shadow calc(var(--dur) * 4) ease-out, transform calc(var(--dur) * 4) ease-out, background calc(var(--dur) * 4) steps(4, jump-end);
 }
-.result-block__discount:hover, .result-block__discount:focus {
+.result-block__discount:hover, .result-block__discount:focus, .result-block__discount:disabled {
   box-shadow: 0 4px 8px hsla(190, 15%, 5%, 0.2);
   transform: translateY(-4px);
   color: hsl(210, 1%, 48%);
@@ -71,6 +71,9 @@
   border-top-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+}
+.result-block__discount:disabled {
+  cursor: none;
 }
 .result-block__result {
   flex-basis: 15%;
